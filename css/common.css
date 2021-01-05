@@ -649,7 +649,7 @@ footer {width: 100%;}
     .last-box .second {background-position: 0%; width:100%; height:200px;}
     .last-box .third {background-position: 0%; width:100%; height:200px;}
     .last-box div font p {font-size: 20px;}
-    .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 5rem; color: #fff; margin-bottom: 20px;}
+    .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 7rem; color: #fff; margin-bottom: 50px;}
     
 }
 
@@ -664,17 +664,10 @@ footer {width: 100%;}
     .home_txt .top p {font-size: 1.5rem; line-height: 40px;}
     .home_txt .middle p {padding: 0 0px; word-break: keep-all; font-weight: 300; font-size: 14px;}
     /* panel1 */
-    .panel1 .left-part .slider-2 {margin: 5rem auto;width: 100%;}
+    .panel1 .left-part .slider-2 {margin: 5rem auto; width: 100%;}
     .panel1 .right-part .inner {width: 100%; margin-top: 18rem;}
     /* panel2 */
     .panel2 .right-part .port-img {width: 90%;}
-      /* 박스크기 */
-    .last-box .first {background-position: 0%; width:100%; height:180px;}
-    .last-box .second {background-position: 0%; width:100%; height:180px;}
-    .last-box .third {background-position: 0%; width:100%; height:180px;}
-    .last-box div font p {font-size: 20px;}
-    .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 8rem; color: #fff; margin-bottom: 20px;}
-    
    
    
 }
