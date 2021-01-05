@@ -663,8 +663,8 @@ footer {width: 100%;}
     .home_txt .middle p {padding: 0 0px; word-break: keep-all; font-weight: 300; font-size: 14px;}
     /* panel1 */
     .panel1 .container .business_part_cont {margin-top: 0px;}
-    .panel1 .left-part .slider-2 {margin: 5rem auto; width: 100%;}
-    .panel1 .right-part .inner {width: 100%; margin-top: 18rem; border:1px solid red;}
+    .panel1 .left-part .slider-2 {margin: 3rem auto; width: 100%;}
+    .panel1 .right-part .inner {width: 100%; margin-top: 15em; border:1px solid red;}
     /* panel2 */
     .panel2 .right-part .port-img {width: 90%;}
    
