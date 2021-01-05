@@ -656,6 +656,10 @@ footer {width: 100%;}
     
 }
 
+@media all and (max-width:540px){
+    .panel1 .right-part .inner {width: 100%; margin-top: 270px!important;}
+    
+}
 
 @media all and (max-width:440px){
      /* home */
