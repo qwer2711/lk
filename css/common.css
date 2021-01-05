@@ -88,7 +88,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 
 
 /* section 공통 */
-.panel {height: 100vh!important;}
+.panel {height: 100vh;}
 .panel .container {max-width: 1360px; margin: 0 auto;}
 /* 페이지버튼 */
 .pagination {position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 10;}
@@ -564,11 +564,11 @@ footer {width: 100%;}
     .sideNav li a {display:block; position: relative; color:#1a1a1a; height:55px; width:100%; line-height:55px; cursor:pointer; text-decoration:none;}
     .sideNav ul.depth1 {background-color: #fff;}
     .sideNav ul.depth1 li > a {padding: 0px 10px;}
-    .sideNav ul.depth1 > li.open > a {background-color: #5489d7; color: #fff;}
+    .sideNav ul.depth1 > li.open > a {background-color: #1f54b7; color: #fff;}
 
     /*2depth*/
     .sideNav .depth2 {width: 100%;}
-    .sideNav .depth2 > li {color:#5489d7; padding: 10px 0 10px 10px; background-color: rgba(131, 174, 238, 0.2);}
+    .sideNav .depth2 > li {color:#1f54b7; padding: 10px 0 10px 10px; background-color:rgba(31, 84, 183, 0.15)}
     .sideNav .depth2 > li > a {height:30px; line-height: 30px; color: #444;}
     .sideNav li li ul {position: relative; z-index: 9999; overflow:hidden; padding: 5px 10px;}
     .sideNav li.open li a {border:none;}
@@ -625,7 +625,7 @@ footer {width: 100%;}
 }
 
 @media screen and (max-width:768px){
-    
+    .panel {height: 100vh + 10px;}
     .home #mainMovie {display: none;}
     .home .home_img {display: block;}
     .home_txt {padding: 0 15px;}
