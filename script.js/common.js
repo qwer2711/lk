@@ -3,6 +3,7 @@ $(function () {
     $.scrollify({
         section: ".panel",
         scrollbars: false,
+        setHeights:false,
         before: function (i, panels) {
             $('html').attr('data-scrollify-index', i);
             var ref = panels[i].attr("data-section-name");
@@ -26,14 +27,16 @@ $(function () {
 
             $(".pagination a").on("click", $.scrollify.move);
         }
+
     });
+    
 });
 
 $.scrollify({
-    section: ".panel3",
-    scrollbars: false,
     interstitialSection: "footer"
 });
+
+
 
 //panel1 슬라이드
 $('.slider-2 .page-nav > div').click(function () {
