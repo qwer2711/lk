@@ -679,8 +679,11 @@ footer {width: 100%;}
     .last-box div font p {font-size: 20px;}
     .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 0rem; color: #fff; margin-bottom: 20px;}
     /* sub1-1인사말 */
+    top_cont .greeting_tit {font-size: 2rem; line-height: 3rem; letter-spacing: -.05em;}
+    .quote {width: 20rem; margin: 8rem 0 0 2rem ;font-size: 1.2rem; line-height: 2.833rem;text-indent: -2.666rem;}
     .top_cont .img-greeting {width: 25rem;}
     .top_cont {height: 39rem;}
+    .greeting_txt {font-size: 16px; text-align: center;}
 }
 
 @media all and (max-width:540px){
@@ -703,7 +706,7 @@ footer {width: 100%;}
     /* sub1-1인사말 */
     .top_cont .greeting_tit {font-size: 2rem; line-height: 3rem; letter-spacing: -.05em;}
     .quote {width: 20rem; margin: 8rem 0 0 2rem ;font-size: 1.2rem; line-height: 2.833rem;text-indent: -2.666rem;}
-    .top_cont .img-greeting {width: 15rem;}
+    .top_cont .img-greeting {width: 10rem;}
     .top_cont {height: 32rem;}
     .greeting_txt {font-size: 16px; text-align: center;}
 }
