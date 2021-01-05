@@ -106,10 +106,13 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 
 
 /* home_시작*/
+
 .mainmovie {position: relative; width: 100%; height: 100vh; top: 0; left: 0; overflow: hidden;}
 .mainmovie::after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.41); z-index: 1;}
-.mainmovie video {min-width: 100%;min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%;-webkit-transform: translateX(-50%) translateY(-50%);-ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%);}
+.mainmovie video {min-width: 100%; min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%;-webkit-transform: translateX(-50%) translateY(-50%);-ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%);}
 .home_txt {position: absolute; top: 50%; left: 50%; transform: translateX(-50%)translateY(-50%); z-index: 3; color: #fff; text-align: center;}
+.mainmovie .home_img {display: none; min-width: 100%; min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%;-webkit-transform: translateX(-50%) translateY(-50%);-ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background:url(../images/m_home.PNG); background-repeat: no-repeat; background-position: center; background-size: cover;}
+
 .home_txt .top p {font-size: 3.8rem; font-weight: 600; line-height: 80px; text-transform: uppercase;}
 .home_txt .middle p { font-size: 1.2rem; margin-top: 20px;}
 .home_txt button {margin-top: 25px; padding: 15px 40px; border-radius: 305px; background: rgba(221, 221, 221, 0); border: 1px solid #fff; color: #fff; cursor: pointer; font-size: 17px; transition: all .3s ease;}
@@ -476,8 +479,6 @@ footer {width: 100%;}
     
     /* panel2 */
     /* left-part */
-    .panel2 {background: #ddd;}
-    .panel2 .left-part {background: #ddd;}
     .panel2 .left-part {float: left; width: 100%;}
     .panel2 .left-part .port-cont {margin-top: 0px; text-align: center;}
     .panel2 .left-part .port-cont .port_tit {display: none; margin-top: 0px; width: 100%;}
@@ -625,6 +626,9 @@ footer {width: 100%;}
 }
 
 @media screen and (max-width:768px){
+    
+    .home video {display: none;}
+    .home .home_img {display: block;}
     .home_txt {padding: 0 15px;}
     .home_txt .top p {font-size: 2rem; font-weight: 600; line-height: 60px; text-transform: uppercase; white-space: nowrap;}
     .home_txt .middle p {padding: 0 0px;word-break: keep-all;font-weight: 300;}
