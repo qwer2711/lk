@@ -673,6 +673,10 @@ footer {width: 100%;}
     .main-grid .row .cell .grid-item-hover .hover-text {font-size: 1.1rem; line-height: 25px;}
     .main-grid .row .cell nav .grid-item-hover-3 .hover-text{font-size: 1.1rem; line-height: 25px;}
     .main-grid .row .cell nav .grid-item-hover-7 .hover-text{font-size: 1.1rem; line-height: 22px;}
+    
+    /* sub4-1 문의사항 */
+    .field1 label { width: 100%;display: inline-block;}
+    .field1 .data_f {width: 100%; margin-top: 10px;}
 
     /* footer*/
     .footer_menu_wrap .site{display: none;}
@@ -762,6 +766,13 @@ footer {width: 100%;}
     .main-grid .row .cell nav .grid-item-hover-5{ background-color:#d52a2c; height: 100px;}
     .main-grid .row .cell nav .grid-item-hover-6{background-color:#7bb15a; height: 100px;}
     .main-grid .row .cell nav .grid-item-hover-7{ background-color:#46b6af; height: 100px;}
+    
+    /* sub4-1 문의사항 */
+    .answer label {width: 100%; padding: 15px 0; background-color: #1f416d;border-radius: 5px;box-sizing: border-box;color: #fff;text-align: left; padding-left: 5%; font-size: 1.0em; margin: 5px 0;}
+    .question-box input[type='radio'] {margin-right: 10px;}
+    .field2_box {flex-wrap: wrap;}
+    .field2 {width: 100%;}
+    .field3 {width: 100%; margin-top: 15px;}
 
 }
 
