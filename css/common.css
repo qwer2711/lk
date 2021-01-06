@@ -768,6 +768,8 @@ footer {width: 100%;}
 @media all and (max-width:540px){
     .panel1 .right-part .inner {width: 100%; margin-top: 130px!important;}
     
+    .panel .contain_2 {padding-top: 30px;}
+    
 }
 
 @media all and (max-width:440px){
