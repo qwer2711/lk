@@ -801,9 +801,9 @@ footer {width: 100%;}
     .panel2 .right-part .port-img {width: 90%;}
     .panel1 .right-part .slides-cont .slide_tit span {font-size: 18px;}
     /* sub1-1인사말 */
-    .quote:after, .greeting .quote:before {width: 2.066rem; height: 1.35rem;}
+    .quote:after, .greeting .quote:before {width: 1.5rem; height: 1rem;}
     .top_cont .greeting_tit {font-size: 1.8rem; line-height: 3rem; letter-spacing: -.05em;}
-    .quote {width: 20rem; margin: 2rem 0 0 2rem ; font-size: 1.2rem; line-height: 2rem; text-indent: -2.666rem;}
+    .quote {width:100%; margin: 2rem 0 0 2rem ; font-size: 16px; line-height: 2rem; text-indent: -1.6rem; word-break: keep-all;}
     .top_cont .img-greeting {width: 10rem;}
     .top_cont {height: 23rem;}
     .greeting_txt {font-size: 16px; text-align: center;}
