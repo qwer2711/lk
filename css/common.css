@@ -384,14 +384,22 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 /* sub3-1_포트폴리오_시작 */
 /* cell 너비*/
 .main-grid .row .cell {width:283px; float: left;}
-.main-grid > .row:first-child .cell:first-child , .main-grid > .row:nth-child(2) .cell:nth-child(2){ width:calc(100% - 283px * 2);}
+.main-grid > .grid-box1 .cell:first-child , .main-grid > .grid-box2 .cell:nth-child(2){ width:calc(100% - 283px * 2);}
 /* row 높이*/ 
-.main-grid > .row:first-child .cell{height:592px;}
-.main-grid > .row:nth-child(2) .cell{height:376px;}
+.main-grid > .grid-box1 .cell{height:592px;}
+.main-grid > .grid-box2 .cell{height:376px;}
 .main-grid .row .cell > nav {height:100%;}
 .main-grid .row .cell .grid-item2{height:50%;}
 .main-grid .row .cell .grid-item4{height:50%;}
 .main-grid .row .cell nav > .grid-item-base {height:100%; box-sizing:border-box; background-repeat:no-repeat; background-position:center; background-size:cover; position:relative;}
+/* 이미지 */
+.main-grid .row .cell .grid-item1 .grid-item-base {background-image: url(../images/portfolio.png);!important; }
+.main-grid .row .cell .grid-item2 .grid-item-base {background-image: url(../images/sub/sub3-1_1.jpg)!important;}
+.main-grid .row .cell .grid-item4 .grid-item-base {background-image: url(../images/sub/sub3-1_2.jpg)!important;}
+.main-grid .row .cell .grid-item3 .grid-item-base {background-image: url(../images/sub/sub3-1_3.jpg)!important;}
+.main-grid .row .cell .grid-item5 .grid-item-base {background-image: url(../images/sub/sub3-1_4.jpg)!important;}
+.main-grid .row .cell .grid-item6 .grid-item-base {background-image: url(../images/sub/sub3-1_5.jpg)!important;}
+.main-grid .row .cell .grid-item7 .grid-item-base {background-image: url(../images/sub/sub3-1_6.jpg)!important;}
 /*이미지 텍스트 작업*/ 
 .main-grid .row div nav .grid-item-base .img-txt {position: absolute; top:5%; left: 5%;}
 .main-grid .row div nav .grid-item-base .img-title-1{font-size: 16px; font-weight: 400; letter-spacing: -1px; color: #ffffff; border-bottom: 1px solid #ffffff; padding-bottom: 3px;}
@@ -409,10 +417,13 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 .main-grid .row .cell nav .grid-item-hover-7{ background-color:#46b6af;}
 .main-grid .row .cell nav .grid-item-hover-3 .hover-text {font-size: 1.2rem; }
 .main-grid .row .cell nav .grid-item-hover-7 .hover-text {font-size: 1.2rem; }
+
 /*호버이미지 텍스트*/
 .main-grid .row .cell nav .grid-item-hover{text-align:center;}
 .main-grid .row .cell nav .grid-item-hover .hover-title{display: inline-block; font-size: 16px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -1px; color: #ffffff;  }
 .main-grid .row .cell .grid-item-hover .hover-text{display: block; font-size: 1.5rem; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 1.24; letter-spacing: -2px; color: #ffffff; padding: 20px; word-break: keep-all; white-space: nowrap;}
+
+
 /* 호버효과 */
 .main-grid .row .cell nav .grid-item-hover > div{opacity:0; z-index:100; cursor:pointer;}
 .main-grid .row .cell nav:hover .grid-item-hover > div{opacity:1; animation-name:size-up-down; animation-duration: .3s; animation-iteration-count:1;}
@@ -659,6 +670,22 @@ footer {width: 100%;}
     .sub3_left h1, .sub3_right h1 {margin-top: 100px; font-size: 25px; line-height: 40px;}
     .sub3_right.four h1 {margin-top: 50px;}
     .sub3_left p {margin-top: 10px;}
+    
+    /* sub3-1 포트폴리오 */
+    .main-grid .row .cell nav .gih {position: absolute; top:auto; bottom:0; width: 100%;}
+    .main-grid .row .cell nav .gih a{position: absolute; top:50%; left: 50%; transform: translateX(-50%)translateY(-50%);}
+    .main-grid .row .cell nav .grid-item-hover-1{background-color:rgba(0, 0, 0, 0.6);}
+    .main-grid .row .cell nav .grid-item-hover-2{background-color:#df6565; height: 80px;}
+    .main-grid .row .cell nav .grid-item-hover-3{background-color:#3e9dd2; height: 80px;}
+    .main-grid .row .cell nav .grid-item-hover-4{background-color:#199776; height: 80px;}
+    .main-grid .row .cell nav .grid-item-hover-5{ background-color:#d52a2c; height: 80px;}
+    .main-grid .row .cell nav .grid-item-hover-6{background-color:#7bb15a; height: 80px;}
+    .main-grid .row .cell nav .grid-item-hover-7{ background-color:#46b6af; height: 80px;}
+    .main-grid .row .cell nav .grid-item-hover > div {opacity: 1;}
+    .main-grid .row .cell nav .grid-item-hover .hover-title {font-size: 20px; display: none;}
+    .main-grid .row .cell .grid-item-hover .hover-text {font-size: 1.1rem; line-height: 25px;}
+    .main-grid .row .cell nav .grid-item-hover-3 .hover-text{font-size: 1.1rem; line-height: 25px;}
+    .main-grid .row .cell nav .grid-item-hover-7 .hover-text{font-size: 1.1rem; line-height: 22px;}
 
     /* footer*/
     .footer_menu_wrap .site{display: none;}
@@ -704,6 +731,38 @@ footer {width: 100%;}
     .history-box .his-list .his-right {padding-left:48.4%;}
     /* sub1-3조직도 */
     .team .img-box img{width: 80%; margin: 0 auto;}
+    
+    
+    /* sub3-1 포트폴리오 */
+    /* cell 너비*/
+    .main-grid .row .cell {width:100%; float: left;}
+    .main-grid > .grid-box1 .cell:first-child{ width:100%;}
+    /* row1 높이*/ 
+    .main-grid > .grid-box1 .cell{height:500px;}
+    .main-grid > .grid-box1 .cell:nth-child(2){height: 1000px;}
+    .main-grid .row .cell > nav {height:100%;}
+    .main-grid .row .cell .grid-item2{height:50%;}
+    .main-grid .row .cell .grid-item4{height:50%;}
+    /* row2 높이*/
+    .main-grid > .grid-box2 .cell{height:500px;}
+    .main-grid > .grid-box2 .cell:nth-child(2){width:100%;}
+    /* 모바일이미지 */
+    /* 이미지 */
+    .main-grid .row .cell .grid-item1 .grid-item-base {background-image: url(../images/portfolio.png);!important; }
+    .main-grid .row .cell .grid-item2 .grid-item-base {background-image: url(../images/sub/m_sub3-1_1.jpg)!important;}
+    .main-grid .row .cell .grid-item4 .grid-item-base {background-image: url(../images/sub/m_sub3-1_2.jpg)!important;}
+    .main-grid .row .cell .grid-item3 .grid-item-base {background-image: url(../images/sub/m_sub3-1_3.jpg)!important;}
+    .main-grid .row .cell .grid-item5 .grid-item-base {background-image: url(../images/sub/m_sub3-1_4.jpg)!important;}
+    .main-grid .row .cell .grid-item6 .grid-item-base {background-image: url(../images/sub/m_sub3-1_5.jpg)!important;}
+    .main-grid .row .cell .grid-item7 .grid-item-base {background-image: url(../images/sub/m_sub3-1_6.jpg)!important;}
+    .main-grid .row .cell nav .grid-item-hover-1{background-color:rgba(0, 0, 0, 0.6);}
+    .main-grid .row .cell nav .grid-item-hover-2{background-color:#df6565; height: 100px;}
+    .main-grid .row .cell nav .grid-item-hover-3{background-color:#3e9dd2; height: 100px;}
+    .main-grid .row .cell nav .grid-item-hover-4{background-color:#199776; height: 100px;}
+    .main-grid .row .cell nav .grid-item-hover-5{ background-color:#d52a2c; height: 100px;}
+    .main-grid .row .cell nav .grid-item-hover-6{background-color:#7bb15a; height: 100px;}
+    .main-grid .row .cell nav .grid-item-hover-7{ background-color:#46b6af; height: 100px;}
+
 }
 
 @media all and (max-width:540px){
