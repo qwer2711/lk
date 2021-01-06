@@ -683,7 +683,7 @@ footer {width: 100%;}
 
 @media screen and (max-width:768px){
     
-    .home #mainMovie {display: none;}
+    .home .mainMovie {display: none;}
     .home .home_img {display: block;}
     .home_txt {padding: 0 15px;}
     .home_txt .top p {font-size: 2rem; font-weight: 600; line-height: 60px; text-transform: uppercase; white-space: nowrap;}
@@ -769,13 +769,16 @@ footer {width: 100%;}
 @media all and (max-width:440px){
     .sub_banner .businese_txt {font-size: 1.3rem;}
      /* home */
-    .home_txt .top p {font-size: 1.5rem; line-height: 40px;}
-    .home_txt .middle p {padding: 0 0px; word-break: keep-all; font-weight: 300; font-size: 14px;}
+    .home_txt .top p {font-size: 1.7rem; line-height: 40px;}
+    .home_txt .middle p {padding: 0 0px; word-break: keep-all; font-weight: 300; font-size: 16px;}
+    .home_txt button {margin-top: 75px; padding: 10px 35px;border: 1px solid #fff;color: #fff;
+    font-size: 17px;}
+    .home .iconmouse {bottom: 0px;}
     /* panel1 */
     .panel1 .container .business_part_cont {margin-top: 0; flex-wrap: wrap;}
     /* left-part */
     .panel1 .left-part {width: 100%; height: 50%; top:5%;}
-    .panel1 .left-part h2.top_tit {top:-4%; left: 50%; transform: translateX(-50%); font-size: 1.4rem; letter-spacing: 15px; }
+    .panel1 .left-part h2.top_tit {top:-4%; left: 50%; transform: translateX(-50%); font-size: 30px; letter-spacing: 15px; }
     /* 슬라이드 */
     .panel1 .left-part .slider-2 {width: 100%; top:0%; left: 50%; transform: translateX(-50%); min-width: auto;}
     /* 페이지수 */
@@ -800,6 +803,17 @@ footer {width: 100%;}
     .top_cont .img-greeting {width: 10rem;}
     .top_cont {height: 23rem;}
     .greeting_txt {font-size: 16px; text-align: center;}
+    
+    /* panel3 */
+    .last-box > div {height: auto;}
+    .last-box .f_left {width:100%;}
+    .last-box .f_right {width:100%;}
+     /* 박스크기 */
+    .last-box .first {background-position: 0%; width:100%; height:150px;}
+    .last-box .second {background-position: 0%; width:100%; height:150px;}
+    .last-box .third {background-position: 0%; width:100%; height:150px;}
+    .last-box div font p {font-size: 20px;}
+    .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 0rem; color: #fff; margin-bottom: 20px;}
     
     /* sub1-2히스토리 */
     .history-wrap {margin-top: 80px;}
