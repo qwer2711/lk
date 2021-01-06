@@ -280,7 +280,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 /* sub_title */
 .sub_tit {text-align: center; margin: 50px 0;}
 /* max-width */
-.cont_area {max-width:1400px; margin: 0 auto 50px; padding: 0 15px;}
+.cont_area {max-width:1400px; margin: 0 auto 50px; padding: 0 20px;}
 
 /* sub1-1_인사말 */
 .greeting {margin-bottom: 100px;}
@@ -298,7 +298,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 
 
 /* sub1-2_히스토리 */
-.history-wrap {width: 100%; padding:25px 0; position: relative; margin-top: 120px; background: rgba(238, 238, 238, .6); background-size: cover; background-position:left; background-repeat: no-repeat; border-radius: 10px;}
+.history-wrap {width: 100%; padding:25px 0; position: relative; margin-top: 120px; background: rgba(238, 238, 238, .6); background-size: cover; background-position:left; background-repeat: no-repeat; border-radius: 10px; padding: 15px;}
 .history-wrap .history-circle {position: absolute; top:-3.5%; left: 50%; transform: translateX(-50%); width: 90%; height: 60px; ; background: #1f54b7; z-index: 10; border:8px solid rgba(238, 238, 238, 0.47);  border-radius: 10px;}
 .history-wrap .history-circle::after {content: 'HISTORY'; position: absolute; top:50%; left: 50%; transform: translateX(-50%)translateY(-50%); font-size: 1.2rem; color: #fff; font-weight: bold; letter-spacing: 2px;}
 .history-box {width:100%; position:relative; background:url('../images/sub/history_line.gif') center repeat-y; padding-bottom:80px; margin-top: 10px;}
@@ -330,17 +330,20 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
  -ms-animation: fadeIn 1s linear 0.3s both;
  animation: fadeIn 1s linear 0.3s both;
 }
-.history-box .his-list .his-left {float:left; width:50%; margin: 30px 0; padding-left:2.2%; text-align:right;}
+.history-box .his-list .his-left {float:left; width:100%; margin: 30px 0; text-align:right; padding-right: 46.4%;}
+.history-box .his-list .his-left .left_box {position: absolute; top:0; left: 0;}
+
 .history-box .his-list:first-child .his-left {margin: 0 0; padding-top:40px; }
-.history-box .his-list .his-left .his-txt {padding-right: 20px; border-bottom: 1px solid #ccc;}
-.history-box .his-list .his-right {float: right ; width:50%; padding-right:1.35%; margin: 30px 0;}
+.history-box .his-list .his-left .his-txt {padding-right: 20px; border-bottom: 1px solid #ccc; }
+
+.history-box .his-list .his-right {float: right ; width:100%; padding-left:49.1%; margin: 30px 0; }
 .history-box .his-list .his-right .his-txt { padding-left: 20px; border-bottom: 1px solid #ccc;}
-.history-box .his-arrow {float:left;width:5%;vertical-align:top;}
+.history-box .his-arrow {float:left; width:5%; vertical-align:top;}
 .history-box .his-arrow .his-round {display:inline-block; border:6px solid #1f54b7; width:25px;height:25px;border-radius:50px;margin-top: 5px;}
 .his-txt {float:left;  width:90%; vertical-align:top; padding-bottom: 20px;}
 .his-txt .his-year {display:block; color:#1f54b7; font-size:22px; font-weight:600; padding-bottom:15px;}
 .his-txt dl {width:100%; position:relative;}
-.his-txt dd {width:100%; float:left; margin: 0;}
+.his-txt dd {width:100%; float:left; margin: 0; word-break: keep-all;}
 .history-box .his-list:hover .his-txt dd {color: #1f54b7;}
 /* sub1-2_히스토리_끝 */
 
@@ -684,6 +687,11 @@ footer {width: 100%;}
     .top_cont .img-greeting {width: 25rem;}
     .top_cont {height: 39rem;}
     .greeting_txt {font-size: 16px; text-align: center;}
+    /* sub1-2히스토리 */
+    .history-box .his-list .his-left {padding-right: 46.3%;}
+    .history-box .his-list .his-right {padding-left:48.4%;}
+    /* sub1-3조직도 */
+    .team .img-box img{width: 80%; margin: 0 auto;}
 }
 
 @media all and (max-width:540px){
@@ -704,9 +712,24 @@ footer {width: 100%;}
     .panel2 .right-part .port-img {width: 90%;}
     .panel1 .right-part .slides-cont .slide_tit span {font-size: 18px;}
     /* sub1-1인사말 */
-    .top_cont .greeting_tit {font-size: 2rem; line-height: 3rem; letter-spacing: -.05em;}
-    .quote {width: 20rem; margin: 8rem 0 0 2rem ;font-size: 1.2rem; line-height: 2.833rem;text-indent: -2.666rem;}
+    .quote:after, .greeting .quote:before {width: 2.066rem; height: 1.35rem;}
+    .top_cont .greeting_tit {font-size: 1.8rem; line-height: 3rem; letter-spacing: -.05em;}
+    .quote {width: 20rem; margin: 2rem 0 0 2rem ; font-size: 1.2rem; line-height: 2rem; text-indent: -2.666rem;}
     .top_cont .img-greeting {width: 10rem;}
-    .top_cont {height: 32rem;}
+    .top_cont {height: 23rem;}
     .greeting_txt {font-size: 16px; text-align: center;}
+    
+    /* sub1-2히스토리 */
+    .history-wrap {margin-top: 80px;}
+    .history-wrap .history-circle::after {font-size: 16px;}
+    .history-box .his-list .his-left {padding-right: 47.8%;}
+    .history-box .his-list .his-right {padding-left:47.1%;}
+    .his-txt .his-year {font-size: 16px;}
+    .his-txt dd {font-size: 14px;}
+    /* sub1-3조직도 */
+    .team .img-box img{width: 100%; margin: 0 auto;}
+    .team p {word-break: keep-all;}
+    /* sub1-4오시는길 */
+    .address .sub_tit {font-size: 25px; margin: 30px 0;}
+    .address .address_tit {font-size: 16px;}
 }

@@ -1,9 +1,11 @@
-//스크롤파이
+$(document).ready(function(){
+    //스크롤파이
 $(function () {
     $.scrollify({
         section: ".panel",
         scrollbars: false,
         setHeights:false,
+        interstitialSection: "footer",
         before: function (i, panels) {
             $('html').attr('data-scrollify-index', i);
             var ref = panels[i].attr("data-section-name");
@@ -31,11 +33,6 @@ $(function () {
     });
     
 });
-
-$.scrollify({
-    interstitialSection: "footer"
-});
-
 
 //panel1 슬라이드
 $('.slider-2 .page-nav > div').click(function () {
@@ -166,6 +163,10 @@ $(document).ready(function () {
             $('.sideNav>ul>li>ul>li>ul>li.has-sub>a').prepend('<span class="plus-minus"></span>');
             // $('.sideNav>ul>li>ul>li>ul>li.has-sub>a').prepend('<i class="fa fa-plus left--icon"></i><i class="fa fa-minus left--icon"></i>'); // 아이콘 사용시
             });
+});
+
+
+    
 });
 
 
