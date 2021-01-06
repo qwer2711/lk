@@ -765,6 +765,10 @@ footer {width: 100%;}
 
 }
 
+@media all and (max-width:550px){
+     .panel1 .slider-2 .page-nav {position: absolute; top:300px; left:50%; transform: translateX(-50%);}
+}
+
 
 @media all and (max-width:440px){
     .sub_banner .businese_txt {font-size: 1.3rem;}
