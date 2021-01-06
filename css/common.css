@@ -766,7 +766,7 @@ footer {width: 100%;}
 }
 
 @media all and (max-width:540px){
-    .panel1 .right-part .inner {width: 100%; margin-top: 280px!important;}
+    .panel1 .right-part .inner {width: 100%; margin-top: 280px!important; border:1px solid red;}
     
     .panel .contain_2 {padding-top: 30px;}
     
