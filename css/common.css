@@ -345,7 +345,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 .history-box .his-list .his-left .his-txt {padding-right: 20px; border-bottom: 1px solid #ccc; }
 
 .history-box .his-list .his-right {float: right ; width:100%; padding-left:49.1%; margin: 30px 0; }
-.history-box .his-list .his-right .his-txt { padding-left: 20px; border-bottom: 1px solid #ccc;}
+.history-box .his-list .his-right .his-txt {padding-left: 20px; border-bottom: 1px solid #ccc;}
 .history-box .his-arrow {float:left; width:5%; vertical-align:top;}
 .history-box .his-arrow .his-round {display:inline-block; border:6px solid #1f54b7; width:25px;height:25px;border-radius:50px;margin-top: 5px;}
 .his-txt {float:left;  width:90%; vertical-align:top; padding-bottom: 20px;}
@@ -353,6 +353,14 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 .his-txt dl {width:100%; position:relative;}
 .his-txt dd {width:100%; float:left; margin: 0; word-break: keep-all;}
 .history-box .his-list:hover .his-txt dd {color: #1f54b7;}
+/* 모바일 히스토리 */
+.m_history-wrap {-webkit-animation: fadeIn 1s linear 0.3s both;-moz-animation: fadeIn 1s linear 0.3s both;
+animation: fadeIn 1s linear 0.3s both;}
+.m_history-wrap {border-collapse: collapse; border-spacing: 0; margin-top: 1%; font-size: 1.1rem; text-align: center; color: #333; margin-top: 20px;}
+.m_history-wrap th , .m_history-wrap td {border: 1px solid #dcdcdc; padding: 10px;}
+.m_history-wrap tr:nth-child(2n+1) td{background: #eee;}
+.m_history-wrap th {text-align: center; font-weight: 500; line-height: 30px;background: #1f54b7; color: #fff; font-size: 1.2rem; padding: 15px;}
+.m_history-wrap td {padding: 10px;}
 /* sub1-2_히스토리_끝 */
 
 /* sub1-3_조직도_시작 */
@@ -399,7 +407,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 .main-grid .row .cell > nav {height:100%;}
 .main-grid .row .cell .grid-item2{height:50%;}
 .main-grid .row .cell .grid-item4{height:50%;}
-.main-grid .row .cell nav > .grid-item-base {height:100%; box-sizing:border-box; background-repeat:no-repeat; background-position:center; background-size:cover; position:relative;}
+.main-grid .row .cell nav > .grid-item-base {height:100%; box-sizing:border-box; background-repeat:no-repeat; background-position:center; position:relative;}
 /* 이미지 */
 .main-grid .row .cell .grid-item1 .grid-item-base {background-image: url(../images/sub/m_portfolio.jpg);!important; }
 .main-grid .row .cell .grid-item2 .grid-item-base {background-image: url(../images/sub/sub3-1_1.jpg)!important;}
@@ -441,6 +449,17 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
     }
     50% {
         transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes size-up-down2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1);
     }
     100% {
         transform: scale(1);
@@ -741,16 +760,16 @@ footer {width: 100%;}
     .last-box .third {background-position: 0%; width:100%; height:200px;}
     .last-box div font p {font-size: 20px;}
     .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 0rem; color: #fff; margin-bottom: 20px;}
-    /* sub1-1인사말 */
+    /* sub1-1 인사말 */
     top_cont .greeting_tit {font-size: 2rem; line-height: 3rem; letter-spacing: -.05em;}
     .quote {width: 20rem; margin: 8rem 0 0 2rem ;font-size: 1.2rem; line-height: 2.833rem;text-indent: -2.666rem;}
     .top_cont .img-greeting {width: 25rem;}
     .top_cont {height: 39rem;}
     .greeting_txt {font-size: 16px; text-align: left;}
-    /* sub1-2히스토리 */
+    /* sub1-2 히스토리 */
     .history-box .his-list .his-left {padding-right: 46.3%;}
     .history-box .his-list .his-right {padding-left:48.4%;}
-    /* sub1-3조직도 */
+    /* sub1-3 조직도 */
     .team .img-box img{width: 80%; margin: 0 auto;}
     
     
@@ -759,30 +778,43 @@ footer {width: 100%;}
     .main-grid .row .cell {width:100%; float: left;}
     .main-grid > .grid-box1 .cell:first-child{ width:100%;}
     /* row1 높이*/ 
-    .main-grid > .grid-box1 .cell{height:500px;}
-    .main-grid > .grid-box1 .cell:nth-child(2){height: 1000px;}
+    .main-grid > .grid-box1 .cell{height:450px;}
+    .main-grid > .grid-box1 .cell:nth-child(2){height: 900px;}
     .main-grid .row .cell > nav {height:100%;}
     .main-grid .row .cell .grid-item2{height:50%;}
     .main-grid .row .cell .grid-item4{height:50%;}
     /* row2 높이*/
-    .main-grid > .grid-box2 .cell{height:500px;}
+    .main-grid > .grid-box2 .cell{height:450px;}
     .main-grid > .grid-box2 .cell:nth-child(2){width:100%;}
     /* 모바일이미지 */
     /* 이미지 */
-    .main-grid .row .cell .grid-item1 .grid-item-base {background-image: url(../images/portfolio.png);!important; }
+    .main-grid .row .cell .grid-item1 .grid-item-base {background-image:url(../images/sub/m_portfolio_440.jpg);!important;}
     .main-grid .row .cell .grid-item2 .grid-item-base {background-image: url(../images/sub/m_sub3-1_1.jpg)!important;}
     .main-grid .row .cell .grid-item4 .grid-item-base {background-image: url(../images/sub/m_sub3-1_2.jpg)!important;}
     .main-grid .row .cell .grid-item3 .grid-item-base {background-image: url(../images/sub/m_sub3-1_3.jpg)!important;}
     .main-grid .row .cell .grid-item5 .grid-item-base {background-image: url(../images/sub/m_sub3-1_4.jpg)!important;}
     .main-grid .row .cell .grid-item6 .grid-item-base {background-image: url(../images/sub/m_sub3-1_5.jpg)!important;}
     .main-grid .row .cell .grid-item7 .grid-item-base {background-image: url(../images/sub/m_sub3-1_6.jpg)!important;}
-    .main-grid .row .cell nav .grid-item-hover-1{background-color:rgba(0, 0, 0, 0.6);}
-    .main-grid .row .cell nav .grid-item-hover-2{background-color:#df6565; height: 100px;}
-    .main-grid .row .cell nav .grid-item-hover-3{background-color:#3e9dd2; height: 100px;}
-    .main-grid .row .cell nav .grid-item-hover-4{background-color:#199776; height: 100px;}
-    .main-grid .row .cell nav .grid-item-hover-5{ background-color:#d52a2c; height: 100px;}
-    .main-grid .row .cell nav .grid-item-hover-6{background-color:#7bb15a; height: 100px;}
-    .main-grid .row .cell nav .grid-item-hover-7{ background-color:#46b6af; height: 100px;}
+    .main-grid .row .cell nav .grid-item-hover-1{background-color:rgba(0, 0, 0, 0.);}
+    .main-grid .row .cell nav .grid-item-hover-2{background-color:#fff; height: 90px;}
+    .main-grid .row .cell nav .grid-item-hover-3{background-color:#fff; height:110px;}
+    .main-grid .row .cell nav .grid-item-hover-4{background-color:#fff; height: 90px;}
+    .main-grid .row .cell nav .grid-item-hover-5{ background-color:#fff; height: 90px;}
+    .main-grid .row .cell nav .grid-item-hover-6{background-color:#fff; height: 90px;}
+    .main-grid .row .cell nav .grid-item-hover-7{ background-color:#fff; height: 90px;}
+    .main-grid .row .cell .grid-item-hover .hover-text {color: #000; font-size: 1.2rem;}
+    .main-grid .row .cell nav .grid-item-hover-1 .hover-text {color: #fff; line-height: 40px;}
+    .main-grid .row .cell nav .grid-item-hover-7 .hover-text {font-size: 1.2rem;}
+    .main-grid .row .cell nav .grid-item-hover-3 .hover-text {font-size: 1.2rem;}
+    .main-grid .row .cell nav:hover .grid-item-hover > div{opacity:1; animation-name:size-up-down2; animation-duration: .3s; animation-iteration-count:1;}
+    
+    .main-grid .row .cell nav .gih::before {content: ''; position: absolute; top:0; left: 50%; transform: translateX(-50%); width: 100px; height:4px; border-radius: 10px;}
+    .main-grid .row .cell .grid-item-hover-2::before {background: #df6565;!important;}
+    .main-grid .row .cell .grid-item-hover-3::before {background: #3e9dd2!important;}
+    .main-grid .row .cell .grid-item-hover-4::before {background: #199776!important;}
+    .main-grid .row .cell .grid-item-hover-5::before {background: #d52a2c!important;}
+    .main-grid .row .cell .grid-item-hover-6::before {background: #7bb15a!important;}
+    .main-grid .row .cell .grid-item-hover-7::before {background: #46b6af!important;}
     
     /* sub4-1 문의사항 */
     .question-box .inner {width:90%;}
@@ -797,6 +829,8 @@ footer {width: 100%;}
 @media all and (max-width:550px){
      .panel1 .slider-2 .page-nav {position: absolute; top:65%; left:50%; transform: translateX(-50%);}
         .panel1 .right-part {top:-5%;}
+    
+    .history-wrap{display: none;}
 }
 
 
