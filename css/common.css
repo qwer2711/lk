@@ -662,8 +662,8 @@ footer {width: 100%;}
     .sub3_txt1 h2 {font-size: 1.2rem;}
     .sub3_left {height: 300px;}
     .sub3_right {height: 300px;}
-    .sub3_left img, .sub3_right img {width: 60%;}
-    .sub3_right.one img {padding-top: 30px;}
+    .sub3_left img, .sub3_right img {width: 85%;}
+    .sub3_right.one img {padding-top: 50px;}
     .sub3_left h1, .sub3_right h1 {margin-top: 100px; font-size: 25px; line-height: 40px;}
     .sub3_right.four h1 {margin-top: 50px;}
     .sub3_left p {margin-top: 10px;}
