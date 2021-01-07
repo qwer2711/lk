@@ -307,7 +307,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 
 /* sub1-2_히스토리 */
 .history-wrap {width: 100%; padding:25px 0; position: relative; margin-top: 120px; background: rgba(238, 238, 238, .6); background-size: cover; background-position:left; background-repeat: no-repeat; border-radius: 10px; padding: 15px;}
-.history-wrap .history-circle {position: absolute; top:-3.5%; left: 50%; transform: translateX(-50%); width: 90%; height: 60px; ; background: #1f54b7; z-index: 10; border:8px solid rgba(238, 238, 238, 0.47);  border-radius: 10px;}
+.history-wrap .history-circle {position: absolute; top:-1.5%; left: 50%; transform: translateX(-50%); width: 90%; height: 60px; ; background: #1f54b7; z-index: 10; border:8px solid rgba(238, 238, 238, 0.47);  border-radius: 10px;}
 .history-wrap .history-circle::after {content: 'HISTORY'; position: absolute; top:50%; left: 50%; transform: translateX(-50%)translateY(-50%); font-size: 1.2rem; color: #fff; font-weight: bold; letter-spacing: 2px;}
 .history-box {width:100%; position:relative; background:url('../images/sub/history_line.gif') center repeat-y; padding-bottom:80px; margin-top: 10px;}
 /* 연혁 애니메이션 */
