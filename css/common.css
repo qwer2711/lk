@@ -334,15 +334,16 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 .his-txt dl {width:100%; position:relative;}
 .his-txt dd {width:100%; float:left; margin: 0; word-break: keep-all;}
 .history-box .his-list:hover .his-txt dd {color: #1f54b7;}
+
+
 /* 모바일 히스토리 */
-.m_history-wrap {-webkit-animation: fadeIn 1s linear 0.3s both;-moz-animation: fadeIn 1s linear 0.3s both;
-animation: fadeIn 1s linear 0.3s both; opacity: 0;}
-.m_history-wrap {border-collapse: collapse; border-spacing: 0; margin-top: 1%; font-size: 1.1rem; text-align: center; color: #333; margin-top: 20px;}
-.m_history-wrap th , .m_history-wrap td {border: 1px solid #dcdcdc; padding: 10px;}
-.m_history-wrap tr:nth-child(2n+1) td{background: #eee;}
-.m_history-wrap th {text-align: center; font-weight: 500; line-height: 30px;background: #1f54b7; color: #fff; font-size: 1.2rem; padding: 15px;}
-.m_history-wrap td {padding: 10px;}
+.m_history {border-collapse: collapse; border-spacing: 0; margin-top: 1%; font-size: 1.1rem; text-align: center; color: #333; margin-top: 20px; width:100%;-webkit-animation: fadeIn 1s linear 0.3s both;-moz-animation: fadeIn 1s linear 0.3s both; animation: fadeIn 1s linear 0.3s both;}
+.m_history th , .m_history-wrap td {border: 1px solid #dcdcdc; padding: 10px;}
+.m_history tr:nth-child(2n+1) td{background: #eee;}
+.m_history th {text-align: center; font-weight: 500; background: #1f54b7; color: #fff; font-size: 1.2rem; padding: 15px;}
+.m_history td {padding: 10px;}
 /* sub1-2_히스토리_끝 */
+
 
 /* sub1-3_조직도_시작 */
 .team {margin: 100px auto;}
@@ -747,12 +748,15 @@ footer {width: 100%;}
     .top_cont .img-greeting {width: 25rem;}
     .top_cont {height: 39rem;}
     .greeting_txt {font-size: 16px; text-align: left;}
+    
     /* sub1-2 히스토리 */
+    .history-wrap{display: none;}
+    .m_history{display: block!important; width:100%;}
     .history-box .his-list .his-left {padding-right: 46.3%;}
     .history-box .his-list .his-right {padding-left:48.4%;}
+    
     /* sub1-3 조직도 */
     .team .img-box img{width: 80%; margin: 0 auto;}
-    
     
     /* sub3-1 포트폴리오 */
     /* cell 너비*/
@@ -807,16 +811,19 @@ footer {width: 100%;}
 
 }
 
+
+
 @media all and (max-width:550px){
     .panel1 .slider-2 .page-nav {position: absolute; top:65%; left:50%; transform: translateX(-50%);}
     .panel1 .right-part {top:-5%;}
-    
-    .m_history-wrap {opacity: 1;}
-    .history-wrap{display: none;}
+
+
 }
 
 
+
 @media all and (max-width:440px){
+    
     /* 페이지위치 */
     .lt_tit{line-height: 30px; text-align: right; margin: 10px 10px 0 0;}
     /* 서브배너 */
