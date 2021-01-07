@@ -355,7 +355,7 @@ html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 .history-box .his-list:hover .his-txt dd {color: #1f54b7;}
 /* 모바일 히스토리 */
 .m_history-wrap {-webkit-animation: fadeIn 1s linear 0.3s both;-moz-animation: fadeIn 1s linear 0.3s both;
-animation: fadeIn 1s linear 0.3s both;}
+animation: fadeIn 1s linear 0.3s both; opacity: 0;}
 .m_history-wrap {border-collapse: collapse; border-spacing: 0; margin-top: 1%; font-size: 1.1rem; text-align: center; color: #333; margin-top: 20px;}
 .m_history-wrap th , .m_history-wrap td {border: 1px solid #dcdcdc; padding: 10px;}
 .m_history-wrap tr:nth-child(2n+1) td{background: #eee;}
@@ -827,9 +827,10 @@ footer {width: 100%;}
 }
 
 @media all and (max-width:550px){
-     .panel1 .slider-2 .page-nav {position: absolute; top:65%; left:50%; transform: translateX(-50%);}
-        .panel1 .right-part {top:-5%;}
+    .panel1 .slider-2 .page-nav {position: absolute; top:65%; left:50%; transform: translateX(-50%);}
+    .panel1 .right-part {top:-5%;}
     
+    .m_history-wrap {opacity: 1;}
     .history-wrap{display: none;}
 }
 
@@ -887,12 +888,15 @@ footer {width: 100%;}
     .panel3 h2 {text-align: center; font-size: 1.4rem; padding-top: 0rem; color: #fff; margin-bottom: 20px;}
     
     /* sub1-2히스토리 */
+   
     .history-wrap {margin-top: 80px;}
     .history-wrap .history-circle::after {font-size: 16px;}
     .history-box .his-list .his-left {padding-right: 48%;}
     .history-box .his-list .his-right {padding-left:46.8%;}
     .his-txt .his-year {font-size: 16px;}
     .his-txt dd {font-size: 14px;}
+    .m_history-wrap {font-size: 16px;}
+    
     /* sub1-3조직도 */
     .team .img-box img{width: 100%; margin: 0 auto;}
     .team p {word-break: keep-all;}
