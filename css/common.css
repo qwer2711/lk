@@ -573,7 +573,7 @@ footer {width: 100%;}
     html[data-scrollify-index="2"] .top_inner .m_logo2 {display: block;}
     html[data-scrollify-index="2"] .top_inner .m_logo {display: none;}
     .top_inner .m_logo {display: block; width: 65px;}
-    .top_inner .m_logo2 {display: none;}
+    .top_inner .m_logo2 {display: none; width: 65px;}
     /*  햄버거메뉴 동작  */
     #hamburger_wrapper #hamburger_menu {position: absolute; top: 50%; left: 5%; right: 0; transform: translateY(-50%); width: 23px; height: 20px;}
     #hamburger_wrapper #hamburger_menu span {opacity: 1; left: 0; display: block; width: 100%; height: 2px; border-radius: 10px; color: #5a5858; background-color: #5a5858; position: absolute; transform: rotate(0deg); transition: .4s ease-in-out;}
