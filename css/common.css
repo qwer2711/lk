@@ -53,8 +53,8 @@ fieldset {border: none;}
 .header .header-box { position: relative;}
 .header .header-box > a {display: block;}
 .header .header-box .logo {position: absolute; top: 60%; transform: translateY(-50%); left: 0; margin-left: 50px;}
-.header .header-box .logo-1 { width: 180px; margin-left: 50px;}
-.header .header-box .logo-2 {display: none; width: 180px; margin-left: 50px;}
+.header .header-box .logo-1 {width: 95px; margin-left: 50px;}
+.header .header-box .logo-2 {display: none; width: 95px; margin-left: 50px;}
 /*1차메뉴시작*/
 .header .header-box .menu-1 {line-height: normal;text-align: center;}
 .header .header-box .menu-1 > ul {display: inline-block;}
@@ -85,33 +85,14 @@ html[data-scrollify-index="2"] .header:hover .logo-1 {display: block;}
 html[data-scrollify-index="2"] .header:hover .logo-2 { display: none;}
 /* 헤더_끝 */
 
-.sub-header {position: fixed; top: 0; left: 0; width: 100%; height: 90px; overflow-x: hidden; overflow-y: hidden; z-index: 200; background:rgba(0,0,0,.7); color: #000;}
-.sub-header:hover {height: 270px; transition: height 0.1s 0.1s, background-color 0s 0.1s; background: rgba(0, 0, 0, 0.6); color: #fff;}
-.sub-header .header-box { position: relative;}
-.sub-header .header-box > a {display: block;}
-.sub-header .header-box .logo {position: absolute; top: 60%; transform: translateY(-50%); left: 0; margin-left: 50px;}
-.sub-header .header-box .logo-1 { width: 180px; margin-left: 50px;}
-.sub-header .header-box .logo-2 {display: none; width: 180px; margin-left: 50px;}
-.sub-header .header-box .menu-1 {line-height: normal;text-align: center;}
-.sub-header .header-box .menu-1 > ul {display: inline-block;}
-.sub-header .header-box .menu-1 > ul > li {float: left; position: relative;}
-.sub-header .header-box .menu-1 > ul > li:hover::before { content: ""; position: absolute; bottom: 0; left: 50%; transform: translatex(-50%); width: 60%; height: 2px; background-color: #1e67f0;}
-.sub-header .header-box .menu-1 > ul > li > a { padding: 40px 80px 10px; color: #fff;}
-.sub-header .header-box .menu-1 > ul li a {display: block; white-space: nowrap; font-size: 18px;}
-.sub-header .header-box .menu-1 > ul > li > ul > li {width: 100%;}
-.sub-header .header-box .menu-1 > ul > li > ul > li > a {display: block; text-align: left; padding: 7px 0 7px 0px; text-align: center;}
-.sub-header .header-box .menu-1 > ul > li > ul > li > a {color: #fff;}
-.sub-header .header-box .menu-1 > ul > li > ul > li:hover > a { color: #8db5ff;}
-.sub-header .header-box .menu-1 > ul > li > ul {position: absolute; top: 85px; left: 50%; transform: translatex(-50%);}
-
 /* 서브페이지 헤더 */
 .sub-header {position: fixed; top: 0; left: 0; width: 100%; height: 90px; overflow-x: hidden; overflow-y: hidden; z-index: 200; background:rgba(0,0,0,.7); color: #000;  animation: set_fixed_official_gnb .4s linear both;}
 .sub-header:hover {height: 270px; transition: height 0.1s 0.1s, background-color 0s 0.1s; background: rgba(0, 0, 0, 0.6); color: #fff;}
 .sub-header .header-box { position: relative;}
 .sub-header .header-box > a {display: block;}
 .sub-header .header-box .logo {position: absolute; top: 60%; transform: translateY(-50%); left: 0; margin-left: 50px;}
-.sub-header .header-box .logo-1 { width: 180px; margin-left: 50px;}
-.sub-header .header-box .logo-2 {display: none; width: 180px; margin-left: 50px;}
+.sub-header .header-box .logo-1 { width: 95px; margin-left: 50px;}
+.sub-header .header-box .logo-2 {display: none; width: 95px; margin-left: 50px;}
 .sub-header .header-box .menu-1 {line-height: normal;text-align: center;}
 .sub-header .header-box .menu-1 > ul {display: inline-block;}
 .sub-header .header-box .menu-1 > ul > li {float: left; position: relative;}
@@ -591,7 +572,7 @@ footer {width: 100%;}
     html[data-scrollify-index="2"] .top_menu {background-color: rgba(255, 255, 255, 0.8);}
     html[data-scrollify-index="2"] .top_inner .m_logo2 {display: block;}
     html[data-scrollify-index="2"] .top_inner .m_logo {display: none;}
-    .top_inner .m_logo {display: block;}
+    .top_inner .m_logo {display: block; width: 65px;}
     .top_inner .m_logo2 {display: none;}
     /*  햄버거메뉴 동작  */
     #hamburger_wrapper #hamburger_menu {position: absolute; top: 50%; left: 5%; right: 0; transform: translateY(-50%); width: 23px; height: 20px;}
